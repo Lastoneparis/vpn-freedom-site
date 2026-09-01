@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — VPN Free-Dom</title>
+<meta name="description" content="VPN Free-Dom keeps no browsing logs. No account, no name, no traffic contents. Written to be checkable.">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="site">
+  <div class="wrap">
+    <strong>VPN Free-Dom</strong>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="terms.html">Terms</a>
+    </nav>
+  </div>
+</header>
+<main class="wrap">
+<article>
+
+<h1>Privacy Policy</h1>
+<p class="updated">Last updated: 1 September 2026</p>
+
+<h2>The short version</h2>
+<p><strong>We do not sell, use, or disclose to third parties any user data for any purpose.</strong></p>
+<p>We do not log your browsing. We do not know your name. There is no account. We hold the minimum required to route a packet to your device and to apply the free plan's limit, and nothing else.</p>
+
+<h2>What we do not collect</h2>
+<table><tbody>
+<tr><td><strong>Browsing history</strong></td><td>Our DNS resolvers answer queries and keep no query log.</td></tr>
+<tr><td><strong>Traffic contents</strong></td><td>Your traffic is encrypted between your device and the exit node using WireGuard (ChaCha20-Poly1305). We cannot read it.</td></tr>
+<tr><td><strong>Identity</strong></td><td>No name, email, phone number or account. The app has no sign-up.</td></tr>
+<tr><td><strong>Precise location</strong></td><td>The app reads your device's <em>country</em> setting only, to comply with regional law. It never requests location permission.</td></tr>
+<tr><td><strong>Advertising or analytics identifiers</strong></td><td>The app contains no analytics, advertising or attribution SDKs. None.</td></tr>
+</tbody></table>
+
+<h2>What we do hold, and why</h2>
+<p><strong>A random device identifier.</strong> Generated on your device the first time you open the app. It is not derived from your Apple ID, your hardware, or any identifier shared with other apps.</p>
+<p><strong>Your device's public key and its tunnel address.</strong> Required to route packets to you. Your device generates its own key pair and sends only the public half — the private key never leaves your device, so no server of ours can hold it, disclose it, or have it seized.</p>
+<p><strong>A monthly byte total.</strong> A single running number, used to apply the free plan's data limit. It is not a history: we do not store when you connected, for how long, or which location you used.</p>
+<p><strong>Apple's signed subscription receipt</strong>, if you subscribe. It is verified and discarded; we never see your payment method, card, or Apple ID. Apple is the merchant of record.</p>
+
+<h2>What we cannot promise</h2>
+<p>A VPN is not anonymity, and we would rather say so than let you assume it:</p>
+<ul>
+<li>A website you sign in to still knows who you are.</li>
+<li>Content scanned on your device before encryption is outside the tunnel.</li>
+<li>An adversary observing both ends of a network can correlate traffic by timing and volume. No VPN prevents this.</li>
+<li>We operate our own exit nodes, but the datacentres hosting them are third parties subject to their own jurisdictions.</li>
+<li>The tunnel uses WireGuard's X25519 key exchange, which is <em>not</em> resistant to a future quantum computer. We do not claim post-quantum security.</li>
+</ul>
+
+<h2>Filtering</h2>
+<p>The resolver answers <code>0.0.0.0</code> for domains on a published list of advertising, tracking, malware and phishing hosts. Filtering happens at the moment of the query and is not recorded.</p>
+
+<h2>Your rights</h2>
+<p>Because we hold no identity, most data-subject requests have nothing to act on: we cannot find "your" data, since nothing links it to you. You may still write to us with the device identifier shown in the app, and we will delete the associated record.</p>
+
+<h2>Contact</h2>
+<p>Questions about privacy or your subscription: <a href="mailto:hugomoriceau@icloud.com">hugomoriceau@icloud.com</a></p>
+</article>
+</main>
+</body>
+</html>
